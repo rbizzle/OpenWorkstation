@@ -7,7 +7,7 @@ moduleposition = getModuleposition()
 # define USB port
 # for macOS, ls /dev/tty.usb* in terminal
 # for windows, check device manager and then USB connections; for example 'COM5'
-robotUSB = 'COM5'
+robotUSB = '/dev/cu.usbmodem11101'
 
 
 def connect():

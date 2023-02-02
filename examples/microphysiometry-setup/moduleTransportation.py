@@ -34,14 +34,14 @@ def move_to_moduleSensor():
 
 def move_to_moduleLifter():
     robot2._driver.send_command('G90')
-    robot2._driver.send_command('G0 F500')
+    robot2._driver.send_command('G0 F3000')
     robot2._driver.send_command(moduleposition['moduleLifter'])
     sleep(1)
 
 
 def move_to_lidHolder():
     robot2._driver.send_command('G90')
-    robot2._driver.send_command('G0 F500')
+    robot2._driver.send_command('G0 F10000')
     robot2._driver.send_command(moduleposition['lidHolder'])
     sleep(1)
 
